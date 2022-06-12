@@ -1,0 +1,17 @@
+English:
+Tictactoe is a game where the objective is to make 3 marks (horizontal,vertical, diagonal). First player to
+make 3 scores (a 'X' or 'O')wins.
+This project was made in C# and consist in a program class and a class named 'board'. 'Board' controls both
+games (Player vs Player or Player vs CPU).
+
+Board has all the necessary methods to make work this game, so when the program begins has two options:
+1) Player vs Player.
+2) Player vs CPU.
+
+Boards control all methods and the difference this option is the ComputerPlaying() method. So choosing to play Player vs Player:
+    1) Game begins with 'X' choosing a place. After that, it's 'O'. All even turns are 'X', odds 'O' (to decide which turn is it, it's necessery to make turn mod 2).
+    2) In case players choose a place have already been marked, a do-while loop will prevent players to to do this.
+    3) And finally, a method ("EndingCondition())
+    verifys if one of the players have won.
+
+And choosing Player vs CPU (option 2), the difference is ComputerPlaying() method. This method randomly chooses a place that has not been picked yet.
